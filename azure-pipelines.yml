@@ -23,7 +23,7 @@ steps:
 - task: WhiteSource@21
   inputs:
     cwd: '$(System.DefaultWorkingDirectory)'
-    directScan: false
+    directScan: true
     configuration: |
       generateScanReport=True
       updateInventory=True
