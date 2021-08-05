@@ -24,3 +24,8 @@ steps:
   inputs:
     cwd: '$(System.DefaultWorkingDirectory)'
     directScan: false
+    configuration: |
+      generateScanReport=True
+      updateInventory=True
+      scanReportFilenameFormat=static
+      maven.runPreStep=false
